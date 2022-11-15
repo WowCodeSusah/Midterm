@@ -1,0 +1,56 @@
+How CRA works :
+CRA or carry ripple adder is a binary adder that works by counting every individual carry after the other. By counting binary 0 + 1, 1 + 1, 0 + 0 and so on. 
+Carry ripple adder counts it after each binary number. So if we have a example of 1001 and 0011 it would count it from right to left. So it would count like 1 + 1 
+and it generates a carry that carry being 1 and so its continued to the next binary number which will be 0 + 1 + 1 carry so it will generate another carry. 
+And so it becomes 0 + 0 + 1 which will not generate a carry. So the final product will be 1111.
+
+How CLA works :
+CLA or carry look-ahead adder is a binary adder that works by counting every carry simultaneously. Instead of individually like a carry ripple adder. A CLA will 
+count all adder at the same time. It does this by creating two other variables which are generate and propagate. Propagate is where the original two A's and B's 
+create a carry bit while generate is where a the sum of all generates a carry bit. It generates these carries by using 1 bit adders and then combining the answers 
+at the end.
+
+CLA computes faster :
+Because its counting everything all at once. Unlike CRA where it needs to count every individual ripple from one binary equation to the next binary equation. 
+CLA just does it all at once not waiting for every single equation. This does come a far more complex equation and that would usual make things slower but thanks 
+to the nature of how fast addition. CLA after computing all necessary propagate and generate carries. It just adds them up all together. Creating far faster method
+of adding two binary numbers.
+
+Example 4 bits :
+
+
+Tradeoff for speed CLA :
+CLA give time and space complexity for speed. The speed that CLA gains is at the cost of space complexity its requires more space to be able to run efficiently. 
+Its like adding more engines to a car it gains speed by using more space and power from your machine. While time complexity is just that a CLA algorithm will run 
+faster but it trades that off for complex algorithms this makes it so that its not always the fastest a normal CRA would run faster given a smaller number of binary 
+numbers. The graph would look like this :
+
+
+
+Time complexity of CLA compared to CRA :
+
+
+Brute Force Method :
+The usual matrix multiplication method split into a column and row format that being just multiply it as how a the usual matrix would be using this formula :
+
+The brute force method will then count each individual a1a2 and b1c2 and so on counting a total of 8 variables to complete and then add. This is how the brute force 
+method would work. 
+
+Strassen's Algorithm :
+The Strassen algorithm works by dividing the 8 variables that the brute force method had and turning them into 7 variables instead using this equation :
+
+By lowering the variable count from 8 to 7 the Strassen algorithm uses less time by only counting the 7 variables and adding them together to create all the 
+necessary parts for matrix multiplication. But this is done on a 2 by 2 example. To make the Strassen algorithm scales up it needs to use the divide an conquer 
+method. By dividing a matrix from 4 x 4 example it would become a 4 2 x 2 matrixes and then it can continue using the Strassen 2 x 2 method. Finishing it off with
+still a relatively faster time. This makes the Strassen algorithm trapped in a state that it can only accept a matrix that is even in numbers of 2. To counter this 
+weakness the Strassen algorithm employs 0 columns and 0 rows if necessary. This will allow matrixes of not even numbers to be able to use the Strassen algorithm.
+
+Time Complexity Strassen's Algorithm :
+Using the master theorem one will be able to find the exact time complexity of a algorithm with the Strassen algorithm having 7 sub calls with it being reduced by 
+a factor of 2 and that the smallest number that can be inputted being 0 we can conclude that T(n) would be 0(nlog2(7)) which will be 0(n2.81)
+
+
+
+
+
+-
