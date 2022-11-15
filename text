@@ -17,18 +17,19 @@ to the nature of how fast addition. CLA after computing all necessary propagate 
 of adding two binary numbers.
 
 Example 4 bits :
-
+google
 
 Tradeoff for speed CLA :
 CLA give time and space complexity for speed. The speed that CLA gains is at the cost of space complexity its requires more space to be able to run efficiently. 
 Its like adding more engines to a car it gains speed by using more space and power from your machine. While time complexity is just that a CLA algorithm will run 
 faster but it trades that off for complex algorithms this makes it so that its not always the fastest a normal CRA would run faster given a smaller number of binary 
 numbers. The graph would look like this :
-
-
+google
 
 Time complexity of CLA compared to CRA :
-
+CRA time complexity works in a linier fashion by using the 0(n) equation to count the time complexity need. time doesnt increment within CRA it only adds time according to
+the amount of data there is. while CLA works in a logarithmic fashion using the equation 0(log(n)), logarithmic equation is chosen because CLA works by using the divide
+and conquer system to count all binary addition. 
 
 Brute Force Method :
 The usual matrix multiplication method split into a column and row format that being just multiply it as how a the usual matrix would be using this formula :
